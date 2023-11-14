@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      div {
+        margin: 40px;
+        width: 350px;
+        border: 2px solid gray;
+        padding: 20px;
+        display: inline-block;
+      }
+      button {
+        margin: 20px auto;
+        display: block;
+        text-align: center;
+      }
+      input {
+        margin: 4px;
+      }
+    </style>
+    <title>Forms</title>
+  </head>
+  <body>
+    <section>
+      <div>
+        <form action="#">
+          <label for="username">Username:</label>
+          <input type="text" name="" id="username" required /><br />
+
+          <label for="password">Password:</label>
+          <input type="password" name="" id="password" required /><br />
+
+          <label for="date">Date:</label>
+          <input type="date" name="date" id="date" /><br />
+
+          <label for="pic">Picture:</label>
+          <input type="file" name="" id="pic" /><br />
+
+          <label for="color">Color</label>
+          <input type="color" name="" id="color" />
+
+          <label for="range">Range</label>
+          <input type="range" name="" id="range" />
+
+          <label for="gender">Gender:</label>
+
+          <input type="radio" name="gender" id="male" />
+          <label for="male">Male</label>
+
+          <input type="radio" name="gender" id="female" />
+          <label for="female">Female</label>
+
+          <input type="radio" name="gender" id="other" />
+          <label for="other">Other</label><br />
+
+          <label for="terms">Terms and conditions:</label>
+
+          <input type="checkbox" value="agree" id="agree" />
+          <label for="agree">I have read</label>
+
+          <input type="checkbox" value="disagree" id="disagree" />
+          <label for="disagree">I agreed</label>
+
+          <label for="country">Country:</label>
+          <select name="" id="">
+            <option value="bd">Bangladesh</option>
+            <option value="ind">India</option>
+            <option value="sri">Srilanka</option>
+            <option value="sri">Other</option>
+          </select><br><br>
+
+          <textarea name="" id="more" cols="30" rows="5">Enter more informations</textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
