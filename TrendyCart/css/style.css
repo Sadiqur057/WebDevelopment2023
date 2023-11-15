@@ -4,6 +4,39 @@
     box-sizing: border-box;
     font-family: Assistant, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
 }
+.hamburger-menu{
+    height: 45px;
+    width: 50px;
+    position: absolute;
+    top: 1vh;
+    right: 3.5vw;
+    display: none;
+}
+.hamburger-checkbox{
+    position:relative;
+    top: 14.5px;
+    left: 18px;
+    transform: scale(3.5);
+    display: none;
+}
+.hamburger-line{
+    position: relative;
+    width: 45px;
+    height: 1px;
+    margin: 10px;
+    border-bottom: 5px solid rgb(63, 62, 63);
+    bottom: 5px ;
+    right: 7.8px;
+    border-radius: 5px;
+    /* display: none; */
+}
+
+/* ######### Components ######## */
+.container{
+    width: 90vw;
+    margin: auto;
+}
+
 
 /* ########## Navbar Styling ############ */
 .navbar-container{
