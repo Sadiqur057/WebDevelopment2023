@@ -1,0 +1,41 @@
+.box{
+        /* height and width for inside content */
+
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    color:white;
+}
+.box-1{
+
+    /* padding lays exact outside of content */
+    padding: 10px;
+
+    /* border lays exact outside of padding */
+    border: 2px solid black;
+    
+    /* margin lays exact outside of border */
+    margin: 10px;
+    
+    /* padding,margin: 10px 10px 10px 10px;  clockwise order top right bottom left */
+    /* padding,margin: 20px 10px; dirX dirY */
+    
+}
+.box-2{
+    border: 2px dashed black;
+    margin: 20px 30px;
+    padding: 20px;
+}
+.box-3{
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 30px;
+}
+.box-4{
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    /* using border-box margin padding,border will be within the box, it wont increase the box height width*/
+}
