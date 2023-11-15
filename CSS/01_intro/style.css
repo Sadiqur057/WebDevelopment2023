@@ -1,0 +1,8 @@
+.e-heading{
+    /* class selector used */
+     color: green; /* foreground color */
+}
+#e-paragraph{
+    /* id selector used */
+    color: red;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- linking css file -> external stylesheet -->
+    <style>
+      h1{
+        background-color: white;/* element selector */
+      }
+      *{
+        margin: 10px; /* universal selector */
+      }
+      .i-heading {
+        color: Blue; /* foreground color */
+      }
+      .i-paragraph {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="color: red">Inline Style</h2>
+    <p style="color: blue">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta placeat,
+      reiciendis ex, illum, tempore ipsa maxime nostrum molestiae magnam tempora
+      cumque nemo voluptatem ab suscipit optio hic? Repellendus, adipisci totam?
+    </p>
+
+    <h1 class="i-heading">Internal styling</h1>
+    <p class="i-paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ut odit
+      dicta et suscipit, accusamus sunt. Nisi, modi dicta nemo facilis ipsam
+      corrupti quae. Cum assumenda soluta expedita nesciunt odio!
+    </p>
+
+    <h1 class="e-heading">External styling</h1>
+    <p id="e-paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ut odit
+      dicta et suscipit, accusamus sunt. Nisi, modi dicta nemo facilis ipsam
+      corrupti quae. Cum assumenda soluta expedita nesciunt odio!
+    </p>
+  </body>
+</html>
