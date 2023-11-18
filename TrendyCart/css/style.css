@@ -60,7 +60,12 @@ header{
     font-size: 14px;
     color: #282c3f;
     font-weight: 700;
-    text-transform: uppercase;  
+    text-transform: uppercase;
+    padding: 30px 0;  
+}
+.nav-bar li a:hover{
+    
+    border-bottom: 4px solid #FF6382;
 }
 .nav-bar li a sup{
     /* color: #ff3f6c ; */
@@ -134,9 +139,11 @@ header{
     width: 29vw;
     align-self: center;
     padding: 0 30px;
+    text-align: center;
 }
 .display-content p{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    color: #3e4152;
 }
 .display-img{
     width: 71vw;
@@ -170,8 +177,107 @@ header{
 
 
 
+/* ########### category ############### */
+.category-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+.category-heading{
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 2em;
+    margin: 40px 0 20px 30px;
+    max-height: 5em;
+    font-weight: 700;
+}
 
+.category-items{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 320px;
+}
+.category-img{
+    height: 233px;
+}
+.category-img img{
+    height: 100%;
+}
+.category-items .image-desc{
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #0000009d;
+    font-size: 18px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 53px;
+    padding: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    border-radius: 2px;
+}
 
+.category-items .image-desc:hover{
+    color: #fff;
+    background-color: #000;
+}
+.items-heading-1{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 6px;
+    text-align: center;
+}
+.items-heading-2{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* ########## New User  ########## */
+.newuser-container{
+    display: flex;
+    height: 60vh;
+    justify-content: space-between;
+}
+.newuser-img{
+    width: 70%;
+    height: 100%;
+}
+.newuser-content{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+.newuser-content p{
+    font-size: 30px;
+}
+.newuser-content .coupon{
+    font-size: 16px;
+    border: 1px dashed black;
+    padding: 0 5px;
+}
+.newuser-content .coupon .coupon-code{
+    font-weight: 500;
+}
+
+.newuser-img img{
+    width: 100%;
+    height:100%;
+    display: block;
+    object-fit: cover;
+    object-position: top;
+}
 
 @media screen and (max-width:1080px) {
 
@@ -181,6 +287,7 @@ header{
         position: absolute;
         top: 1vh;
         right: 3.5vw;
+        display: block;
     }
     .hamburger-checkbox{
         display: block;
@@ -212,12 +319,7 @@ header{
         background: #333 ;
     }
 
-
-
-
-    .hamburger-menu{
-        display: block;
-    }
+  
     .nav-content{
         width: 100%;
         flex-direction: column;
@@ -267,6 +369,12 @@ header{
     .nav-bar li{
         padding-bottom: 7px;
     }
+    .nav-bar li a{
+        padding: 0px;
+    }
+    .nav-bar li a:hover{
+        border-bottom: 3px solid #FF6382;
+    }
     .search-bar{
         transform: scale(0.9);
         align-self: center;
@@ -278,9 +386,10 @@ header{
         justify-content: space-between;
     }
 
+    /* ######## display content ######### */
 
     .heading-1{
-        font-size: 25px;
+        font-size: 30px;
     }
     .heading-2{
         font-size: 20px;
@@ -292,22 +401,50 @@ header{
         margin: 20px 0;
 
     }
+    .category-items{
+        display: flex;
+        flex-direction: column;
+        width: 192px;
+        height: 256px;
+        justify-content: space-evenly;
+    }
+    .category-img{
+        height: 73%;
+    }
+    .newuser-container{
+        height: 40vh;
+    }
+    .newuser-content p{
+        font-size: 18px;
+    }
+    .newuser-content .coupon{
+        font-size: 12px;
+    }
 }
+
+
+
+
+
 @media screen and (max-width:620px) {
     .display-img {
         height: 20vh;
-
     }
     .display-img img{
         height: 100%;
         object-position: center;
         object-fit: cover;
     }
+
+    .display-content {
+        padding: 0 ;
+    }
     .heading-1{
-        font-size: 18px;
+        font-size: 16px;
+        font-weight: 600;
     }
     .heading-2{
-        font-size: 14px;
+        font-size: 9px;
     }
     .btn{
         font-size: 10px;
@@ -316,4 +453,33 @@ header{
         margin: 5px 0;
 
     }
+
+    .category-heading{
+        letter-spacing: .1em;
+        font-size: 1.2em;
+        margin: 40px 0 20px 20px;
+        max-height: 5em;
+        font-weight: 700;
+    }
+    .items-heading-1{
+        font-size: 15px;
+    }
+    .items-heading-2{
+        font-size: 15px;
+    }
+    .category-items a .image-desc{
+        font-size: 14px;
+    }
+    .newuser-container{
+        height: 30vh;
+    }
+    .newuser-content p{
+        font-size: 14px;
+    }
+    .newuser-content .coupon{
+        font-size: 10px;
+    }
+
+
+
 }
