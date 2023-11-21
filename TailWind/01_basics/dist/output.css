@@ -546,10 +546,6 @@ video {
   -webkit-line-clamp: 3;
 }
 
-.h-9 {
-  height: 2.25rem;
-}
-
 .h-96 {
   height: 24rem;
 }
@@ -566,10 +562,6 @@ video {
   list-style-position: outside;
 }
 
-.list-decimal {
-  list-style-type: decimal;
-}
-
 .list-disc {
   list-style-type: disc;
 }
@@ -578,32 +570,12 @@ video {
   list-style-image: url(checkmark.png);
 }
 
-.list-image-\[url\(\.\/check\)\] {
-  list-style-image: url(./check);
-}
-
-.list-image-\[url\(\.\/checkmark\.png\)\] {
-  list-style-image: url(./checkmark.png);
-}
-
-.list-image-\[url\(\.\/list-image-\\\[url\\\(checkmark\\\.png\\\)\\\]\)\] {
-  list-style-image: url(./list-image-\[url\(checkmark\.png\)\]);
-}
-
-.list-image-\[url\(\"checkmark\.png\"\)\] {
-  list-style-image: url("checkmark.png");
-}
-
-.border {
-  border-width: 1px;
+.border-2 {
+  border-width: 2px;
 }
 
 .border-4 {
   border-width: 4px;
-}
-
-.border-2 {
-  border-width: 2px;
 }
 
 .border-b-4 {
@@ -739,6 +711,62 @@ video {
 
 .underline {
   text-decoration-line: underline;
+}
+
+.overline {
+  text-decoration-line: overline;
+}
+
+.line-through {
+  text-decoration-line: line-through;
+}
+
+.no-underline {
+  text-decoration-line: none;
+}
+
+.decoration-indigo-500 {
+  text-decoration-color: #6366f1;
+}
+
+.decoration-pink-500 {
+  text-decoration-color: #ec4899;
+}
+
+.decoration-sky-500 {
+  text-decoration-color: #0ea5e9;
+}
+
+.decoration-solid {
+  text-decoration-style: solid;
+}
+
+.decoration-double {
+  text-decoration-style: double;
+}
+
+.decoration-dotted {
+  text-decoration-style: dotted;
+}
+
+.decoration-dashed {
+  text-decoration-style: dashed;
+}
+
+.decoration-wavy {
+  text-decoration-style: wavy;
+}
+
+.decoration-1 {
+  text-decoration-thickness: 1px;
+}
+
+.decoration-2 {
+  text-decoration-thickness: 2px;
+}
+
+.decoration-4 {
+  text-decoration-thickness: 4px;
 }
 
 .hover\:tracking-wider:hover {
