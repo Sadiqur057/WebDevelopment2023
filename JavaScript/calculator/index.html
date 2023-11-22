@@ -10,23 +10,23 @@
     <div id="calculator">
         <input type="text" id="display" readonly>
         <div class="button-container">
-            <button class="btn" id="">+</button>
-            <button class="btn" id="">C</button>
-            <button class="btn" id="">1</button>
-            <button class="btn" id="">2</button>
-            <button class="btn" id="">-</button>
-            <button class="btn" id="">3</button>
-            <button class="btn" id="">4</button>
-            <button class="btn" id="">5</button>
-            <button class="btn" id="">*</button>
-            <button class="btn" id="">6</button>
-            <button class="btn" id="">7</button>
-            <button class="btn" id="">8</button>
-            <button class="btn" id="">/</button>
-            <button class="btn" id="">9</button>
-            <button class="btn" id="">0</button>
-            <button class="btn" id="">.</button>
-            <button class="btn btn-lg" id="">=</button>
+            <button class="btn" onclick="calc.updateDisplay('+')">+</button>
+            <button class="btn" onclick="calc.clearDisplay()">C</button>
+            <button class="btn" onclick="calc.updateDisplay('1')">1</button>
+            <button class="btn" onclick="calc.updateDisplay('2')">2</button>
+            <button class="btn" onclick="calc.updateDisplay('-')">-</button>
+            <button class="btn" onclick="calc.updateDisplay('3')">3</button>
+            <button class="btn" onclick="calc.updateDisplay('4')">4</button>
+            <button class="btn" onclick="calc.updateDisplay('5')">5</button>
+            <button class="btn" onclick="calc.updateDisplay('*')">*</button>
+            <button class="btn" onclick="calc.updateDisplay('6')">6</button>
+            <button class="btn" onclick="calc.updateDisplay('7')">7</button>
+            <button class="btn" onclick="calc.updateDisplay('8')">8</button>
+            <button class="btn" onclick="calc.updateDisplay('/')">/</button>
+            <button class="btn" onclick="calc.updateDisplay('9')">9</button>
+            <button class="btn" onclick="calc.updateDisplay('0')">0</button>
+            <button class="btn" onclick="calc.updateDisplay('.')">.</button>
+            <button class="btn btn-lg" onclick="calc.evaluate()">=</button>
         </div>
     </div>
 
