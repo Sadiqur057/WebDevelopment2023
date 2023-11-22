@@ -7,7 +7,7 @@ class Calculator{
         return document.querySelector('#display').value =`${currDisplay}${num}`;
     }
     clearDisplay(){
-        return document.getElementById('#display').value='';
+        return document.querySelector('#display').value='';
     }
     evaluate(num){
         let currDisplay = document.querySelector('#display').value ;
