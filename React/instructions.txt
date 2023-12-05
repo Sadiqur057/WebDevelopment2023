@@ -1,0 +1,11 @@
+npm create vite@latest
+project name:
+select framework: React
+select variant: JavaScript
+
+npm install
+npm run dev
+
+npm i bootstrap@5.3.2
+
+import "bootstrap/dist/css/bootstrap.min.css"
